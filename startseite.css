@@ -202,6 +202,7 @@ img {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     align-items: center;
+    position: relative;
     box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.2), /* Unten links */
                 10px 10px 20px rgba(0, 0, 0, 0.2);  /* Unten rechts */
     overflow: visible; /* Stellt sicher, dass der Schatten nicht abgeschnitten wird */
@@ -243,10 +244,44 @@ img {
     width: 0; /* Start mit Breite 0 */
     height: 2px; /* Dicke der Linie */
     background-color: white; /* Farbe der Linie */
-    transition: 0s ; /* Smooth-Animation für die Linie */
     border-radius: 1px;
 }
 
 .button-link:hover::after {
     width: 100%; /* Linie wird bei Hover über die gesamte Breite erweitert */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown-Inhalte verstecken */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 350px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1000;
+    bottom: 10px; /* Positioniert das Dropdown über dem Link */
+    left: 50%; /* Horizontale Mitte des Links */
+    transform: translate(-50%); /* Exakte Zentrierung relativ zur Textmitte und leichte Verschiebung nach oben */
+}
+
+/* Dropdown-Inhalte sichtbar machen, wenn über das Dropdown gehovt wird */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content p:hover {
+    background-color: #f1f1f1;
 }
