@@ -79,7 +79,7 @@ text {
 width: 35%;
 }
 
-#box-banner{
+box-banner{
 border: 1px solid white;
 border-radius: 7px;
 padding: 0px;
@@ -90,20 +90,20 @@ background-color: #003366;
 overflow: hidden;
 }
 
-#box-pic {
+box-pic {
 vertical-align: bottom;
 border-radius: 8px;
 float: left;
 }
 
-#box-text{
+box-text{
 line-height: 20px;
 margin: 15px;
 float: right; 
 color: white;
 }
 
-#box-banner{
+box-banner{
 border: 1px solid white;
 border-radius: 7px;
 padding: 0px;
@@ -114,14 +114,14 @@ background-color: #003366;
 overflow: hidden;
 }
 
-#box-pic {
+box-pic {
 vertical-align: bottom;
 border-radius: 5%;
 float: left;
 }
 
 
-#box-text{
+box-text{
 line-height: 20px;
 margin: 15px;
 float: right;
