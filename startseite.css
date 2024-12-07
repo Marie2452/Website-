@@ -70,6 +70,8 @@ body {      /*Body gibt das Styling für den Kompletten rumpf der Webseite*/
 .nav-btn {
     background-color: white;
     border: 1px solid #ced4da;
+    color: black;
+    text-decoration: none;
     border-radius: 5px;
     padding: 10px 20px;
     margin: 0 10px;
