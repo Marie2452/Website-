@@ -1,0 +1,23 @@
+.content-block-U {
+    background-color: white;
+    border: 1px solid #ced4da;
+    padding: 10px 10px;
+    margin: 20px;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Schatten */
+    overflow: visible; /* Stellt sicher, dass der Schatten nicht abgeschnitten wird */
+    min-height: 100px;
+}
+
+.content-block-U img{
+    width: 100%;
+    height: auto;
+}
+
+.content-block-U p{
+    text-align: center;
+    text-decoration: none; /* Entfernt die Standard-Unterstreichung */
+    color: #003366; /* Textfarbe */
+    font-size: 16px; /* Schriftgröße */   
+}

@@ -4,7 +4,7 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Terminvereinbarung</title> 
+        <title>Online Kontaktformular</title> 
         <link rel="stylesheet" href="startseite.css">
         <link rel="stylesheet" href="termin.css">
 
@@ -34,46 +34,30 @@
             </nav>
 
             <section class="highlight">
-                <p> <b>Terminvereinbarung</b></p>
+                <p> <b>Online Kontaktformular</b></p>
             </section>
 
-
             <div class="content-block-term">
-                <h3>Termin</h3>
-                <div class="mid">
-                    
-                    <div class="dat">
-                        <label for="date">Datum:</label>
-                        <input type="date" name="datum" id="date">
-                    </div>
-
-                    <div class="nam">
-                        <label for="zeit">Uhrzeit:</label>
-                        <input type="datetime" name="zeit" id="zeit">
-                    </div>
-                </div>
-                <div class="top">
-                    <div class="txt">
+                    <div style="width: 100%; margin: 5px; margin-bottom: 10px;">
                         <label for="nam">Name:</label>
                         <input type="text" name="Name" id="nam">
                     </div>
 
-                    <div class="radio">
-                        <label for="kat">Kategorie:</label>
-                        <input type="radio" name="Kategorie" id="kat">
-                        <label for="kat">Hund</label>
-
-                        <input type="radio" name="Kategorie" id="kat">
-                        <label for="kat">Feuerwerk</label>
+                    <div style="width: 100%; margin: 5px; margin-bottom: 10px;">
+                        <label for="nam">E-Mail:</label>
+                        <input type="text" name="mail" id="mail">
                     </div>
-                </div>
+
+                    <div style="width: 100%; margin: 5px; margin-bottom: 10px;">
+                        <label for="nam">Telefon:</label>
+                        <input type="text" name="tel" id="tel">
+                    </div>
 
                 <div class="bot">
-                    <h3>Bemerkung:</h3>
+                    <h3>Anliegen:</h3>
                     <textarea name="Bemerkung" id="bem"></textarea>
                 </div>
-                <button type="submit" class="sub">Buchen</button>
-
+                <button type="submit" class="sub">Senden</button>
             </div>
 
         </main>
