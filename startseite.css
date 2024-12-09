@@ -49,7 +49,7 @@ body {      /*Body gibt das Styling für den Kompletten rumpf der Webseite*/
 
 .logo img {
     position: absolute;     /*Definition der Position des Bildes, das bild verschiebt sich nicht*/
-    height: 70px;           /*Das Bild ist 70 Pixel Hoch*/
+    height: 90px;           /*Das Bild ist 70 Pixel Hoch*/
     width: auto;            /*Die breite des Bildes passt sich automatisch an*/
     right: 10px;            /*Das Bild hat einen Abstand von 10 Pixel zum Rechten Rand*/
     text-align: right;      /*Das Bild wird rechts positioniert*/
