@@ -133,6 +133,21 @@ body {      /*Body gibt das Styling für den Kompletten rumpf der Webseite*/
     color: #003366;
     
 }
+.content-block h3 {
+    margin: 0;
+    background-color: white;
+    font-size: 1.3rem;
+    color: #003366;
+    
+}
+
+.content-block label {
+    margin: 0;
+    background-color: white;
+    font-size: 1.3rem;
+    color: #003366;
+    
+}
 
 .header-container {
     width: 100%;

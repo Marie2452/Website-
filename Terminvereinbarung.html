@@ -18,7 +18,9 @@
                     <p>Kommunaler Ordnungsdienst</p>
                 </div>
                 <div class="logo">
-                    <img src="Wappen_Luebbenau.png" alt="Logo Stadt Lübbenau">
+                    <a href="index.html">
+                        <img src="Wappen_Luebbenau.png" alt="Logo Stadt Lübbenau">
+                    </a>
                 </div>
             </div>
         </header>
@@ -31,36 +33,46 @@
                 <button class="nav-btn">Über uns</button>
             </nav>
 
-            <div class="content-block">
-                <div class="txt">
-                    <label for="nam">Name:</label>
-                    <input type="text" name="Name" id="nam">
+            <section class="highlight">
+                <p> <b>Terminvereinbarung</b></p>
+            </section>
+
+
+            <div class="content-block-term">
+                <h3>Termin</h3>
+                <div class="mid">
+                    
+                    <div class="dat">
+                        <label for="date">Datum:</label>
+                        <input type="date" name="datum" id="date">
+                    </div>
+
+                    <div class="nam">
+                        <label for="zeit">Uhrzeit:</label>
+                        <input type="datetime" name="zeit" id="zeit">
+                    </div>
+                </div>
+                <div class="top">
+                    <div class="txt">
+                        <label for="nam">Name:</label>
+                        <input type="text" name="Name" id="nam">
+                    </div>
+
+                    <div class="radio">
+                        <label for="kat">Kategorie:</label>
+                        <input type="radio" name="Kategorie" id="kat">
+                        <label for="kat">Hund</label>
+
+                        <input type="radio" name="Kategorie" id="kat">
+                        <label for="kat">Feuerwerk</label>
+                    </div>
                 </div>
 
-                <div class="radio">
-                    <label for="kat">Kategorie:</label>
-                    <input type="radio" name="Kategorie" id="kat">
-                    <label for="kat">Hund</label>
-
-                    <input type="radio" name="Kategorie" id="kat">
-                    <label for="kat">Feuerwerk</label>
-                </div>
-
-                <h2>Termin</h2>
-                <div>
-                    <label for="date">Datum:</label>
-                    <input type="date" name="datum" id="date">
-                </div>
-
-                <div>
-                    <label for="zeit">Uhrzeit:</label>
-                    <input type="datetime" name="zeit" id="zeit">
-                </div>
-
-                <div>
-                    <h2>Bemerkung:</h2>
+                <div class="bot">
+                    <h3>Bemerkung:</h3>
                     <textarea name="Bemerkung" id="bem"></textarea>
                 </div>
+                <button type="submit" class="sub">Buchen</button>
 
             </div>
 
