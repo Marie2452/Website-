@@ -124,7 +124,7 @@ body {      /*Body gibt das Styling für den Kompletten rumpf der Webseite*/
     overflow: visible; /* Stellt sicher, dass der Schatten nicht abgeschnitten wird */
     min-height: 100px;
 
-div#Einleitungstext {
+#Infotext {
 background-color: white;
 color: black; 
 padding: 30px;
@@ -132,61 +132,53 @@ border: 8px solid white;
 margin: 20px;
 }
 
-box-banner{
-border: 1px solid white;
-border-radius: 7px;
+#box-banner2 {
+border: 10px solid white;
+border-radius:7px;
 padding: 0px;
-width: fit-content;
-margin: 20px auto;
-Line-height: 0%;
-background-color: #003366;
-overflow: hidden;
+width: fit-content; 
+margin: 20px auto; 
+line-height: 0%;
 }
 
-box-pic {
-vertical-align: bottom;
-border-radius: 8px;
+#box-pic2 {
+vertical-align:
+bottom;
+border-radius: 7px;
 float: left;
 }
-
-box-text{
-line-height: 20px;
-margin: 15px;
-float: right; 
-color: white;
-}
-
-box-banner1{
-border: 1px solid white;
-border-radius: 7px;
-padding: 0px;
-width: fit-content;
-margin: 20px auto;
-Line-height: 0%;
-background-color: #003366;
-overflow: hidden;
-}
-
-box-pic1 {
-vertical-align: bottom;
-border-radius: 5%;
-float: left;
-}
-
-box-text1{
+  
+#box-text2 {
 line-height: 20px;
 margin: 15px;
 float: right;
+}
+
+#Gesetzestexte{
+background-color: white;
+color: black;
+padding:30px;
+border: 8px solid white;
+margin: 20px;
+}
+
+#Steuern{
+background-color: white;
+color: black;
+padding: 30px;
+border: 8px solid white;
+margin: 20px;
+}
+
+#Kontaktdaten{
+background-color: #003366;
 color: white;
+padding:30px;
+border: 8px solid white;
+margin: 20px;
 }
 
-#Link{
-background-color: white;
-}
 
-#Link1{
-background-color: white;
-}
 
   
 /* Footer */
