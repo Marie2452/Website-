@@ -99,7 +99,6 @@ body {      /*Body gibt das Styling für den Kompletten rumpf der Webseite*/
     overflow: visible; /* Stellt sicher, dass der Schatten nicht abgeschnitten wird */
     border-radius: 5px;
 }
-
 /* Main Content */
 .content {
     display: flex;
@@ -124,91 +123,97 @@ body {      /*Body gibt das Styling für den Kompletten rumpf der Webseite*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Schatten */
     overflow: visible; /* Stellt sicher, dass der Schatten nicht abgeschnitten wird */
     min-height: 100px;
-}
 
-.content-block h2 {
-    margin: 0;
-    background-color: white;
-    font-size: 1.5rem;
-    color: #003366;
-    
-}
-.content-block h3 {
-    margin: 0;
-    background-color: white;
-    font-size: 1.3rem;
-    color: #003366;
-    
-}
-
-.content-block label {
-    margin: 0;
-    background-color: white;
-    font-size: 1.3rem;
-    color: #003366;
-    
-}
-
-.header-container {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-    margin: 0;
-    background-color: white;
-    font-size: 1.5rem;
-    color: #003366;
-}
-.content-container {
-    margin: 20px;
-    display: flex;
-    align-items: flex-start;
-}
-.image {
-    flex: 1;
-    margin-right: 10px;
-    padding-right: 20px;
-}
-.text {
-    flex: 2;
-    padding-left: 20px;
-}
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin: auto;
-}
-.image-meldung{
-   text-align: center;
-}
-
-.text-meldung{
-
-}
-
-.content-block-meldung {
-    background-color: white;
-    display: flex;
-    margin: 10px;
-}
-
-.content-container-meldung {
-    width: 25%;
-    background-color: white;
-    border: 1px solid #ced4da;
-    padding: 10px 10px;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Schatten */
+/* Footer */
+.footer {
+    background-color: #003366;
+    color: white;
+    padding: 10px 10px 10px 2%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    align-items: center;
+    position: relative;
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.2), /* Unten links */
+                10px 10px 20px rgba(0, 0, 0, 0.2);  /* Unten rechts */
     overflow: visible; /* Stellt sicher, dass der Schatten nicht abgeschnitten wird */
-    min-height: 100px;
 }
 
-.content-container-meldung h2{
-    margin: 0;
+.footer-content {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content div {
+    margin: 12px;
+}
+
+.line{   
+    width: 100%;
+    background-color: #003366;
+    height: 4px;
+    border-radius: 1px;
+    margin: 4px auto;
+}
+
+/* buttons */
+.button-link {
+    text-decoration: none; /* Entfernt die Standard-Unterstreichung */
+    color: white; /* Textfarbe */
+    font-size: 16px; /* Schriftgröße */
+    position: relative; /* Erforderlich für den Pseudo-Element-Effekt */
+    padding: 0; /* Optional: Abstand um den Text */
+    
+}
+
+.button-link::after {
+    content: ''; /* Erstellt eine "leere" Linie */
+    position: absolute;
+    bottom: 0; /* Linie direkt unter dem Text */
+    left: 0; /* Startpunkt der Linie */
+    right: 0;
+    width: 0; /* Start mit Breite 0 */
+    height: 2px; /* Dicke der Linie */
+    background-color: white; /* Farbe der Linie */
+    border-radius: 1px;
+}
+
+.button-link:hover::after {
+    width: 100%; /* Linie wird bei Hover über die gesamte Breite erweitert */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown-Inhalte verstecken */
+.dropdown-content {
+    display: none;
+    position: absolute;
     background-color: white;
-    font-size: 1rem;
-    color: #003366;
+    width: 350px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1000;
+    bottom: 10px; /* Positioniert das Dropdown über dem Link */
+    left: 50%; /* Horizontale Mitte des Links */
+    transform: translate(-50%); /* Exakte Zentrierung relativ zur Textmitte und leichte Verschiebung nach oben */
+}
+
+/* Dropdown-Inhalte sichtbar machen, wenn über das Dropdown gehovt wird */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content p:hover {
+    background-color: #f1f1f1;
 }
 
 /* Footer */
