@@ -132,26 +132,7 @@ border: 8px solid white;
 margin: 20px;
 }
 
-#box-banner2 {
-border: 10px solid white;
-border-radius:7px;
-padding: 0px;
-width: fit-content; 
-margin: 20px auto; 
-line-height: 0%;
-}
 
-#box-pic2 {
-vertical-align: bottom;
-border-radius: 7px;
-float: left;
-}
-  
-#box-text2 {
-line-height: 20px;
-margin: 15px;
-float: right;
-}
 
 #Gesetzestexte{
 background-color: white;
