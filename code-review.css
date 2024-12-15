@@ -1,0 +1,69 @@
+
+/*Ecken abrunden*/
+    border-top-left-radius: 10px;       /*Die Linke obere Ecke des Headers hat eine Rundung mit dem Wert 10 Pixel*/
+    border-top-right-radius: 10px;      /*Die Rechte obere Ecke des Headers hat eine Rundung mit dem Wert 10 Pixel*/
+    border-radius: 5px;                 /*Alle Ecken werden abgerundet*/
+
+
+/*Schatten erstellen*/
+    box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.2)    /*RGBA gibt die zu Verwendende Farbe an, 0 0 0 steht für Schwarz. Die 4. Zahl gibt die Stärke der Farbe an*/
+                                                       /*Die 3 px Daten geben an wo der Schatten starten soll also -10px über oder unter oder rechts vom Bauteil, so wie man es möchte.*/
+
+/*Das Wappen Verlinked zur Startseite*/
+    <a href="index.html">               /*Erstellen eines links der auf die Seite "index.html" zeigt.*/
+        <img src="Pictures/Logo neu.png" alt="Logo Stadt Lübbenau">     /*Das wappen wird in den Link gepackt und wird dadurch anlickbar*/
+    </a>
+
+
+/*Navigations Knöpfe*/
+    /*So wird der Knopf im Standard dargestellt*/
+    .nav-btn {
+        background-color: white;        /*Hintergrundfarbe*/
+        border: 1px solid #ced4da;      /*Rand Dicke sowie Farbe*/
+        color: black;                   /*Schriftfarbe*/
+        text-decoration: none;          
+        border-radius: 5px;             /*Runde Ecken*/
+        padding: 10px 20px;             /*Abstand*/
+        margin: 0 10px;                 /*Abstand*/
+        font-size: 1rem;                /*Größe der Schrifft*/
+        cursor: pointer;                /*Der Curser / die Maus wird als Pointer genutzt*/
+        transition: background-color 0.3s, color 0.3s;      /*Wie lange soll es dauern bis die Hintergrund und Schrifftfarbe beim rüberhovern angepasst wird.*/
+    }
+
+    /*Diese Farben ändern sich sobald die Maus rüber Hovered*/
+    .nav-btn:hover {
+        background-color: #003366;      /*Hintergrundfarbe wird angepasst*/
+        color: white;                   /*Schriftfarbe wird angepasst*/
+    }
+
+
+/*Darstellung des Links im FOOTER*/
+    /*So wird der Link normal gezeigt / Dargestellt*/
+    .button-link {
+        text-decoration: none;          /* Entfernt die Standard-Unterstreichung */
+        color: white;                   /* Textfarbe */
+        font-size: 16px;                /* Schriftgröße */
+        position: relative;             /* Erforderlich für den Pseudo-Element-Effekt */
+        padding: 0; 
+    }
+
+    /*So wird der Link angezeigt wenn die Maus drüber hoverd*/
+    .button-link::after {
+        content: '';                    /* Erstellt eine "leere" Linie */
+        position: absolute;
+        bottom: 0;                      /* Linie wird direkt unter dem Text angezeigt*/
+        left: 0;                        /* Startpunkt der Linie */
+        right: 0;
+        width: 0;                       /* Start mit Breite 0 dadurch ist die Linie erstmal NICHT sichtbar */
+        height: 2px;                    /* Dicke der Linie */
+        background-color: white;      /* Farbe der Linie */
+        border-radius: 1px;
+    }
+
+    /*Sorgt dafür das die Linie beim rüber hovern angezeigt wird*/
+    .button-link:hover::after {
+        width: 100%;                    /* Linie wird bei Hover über die gesamte Breite erweitert. Dadruch wird Sie erst sichtbar*/
+    }
+
+
+
