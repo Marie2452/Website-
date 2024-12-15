@@ -15,6 +15,10 @@
     </a>
 
 
+/*Hier Link*/
+    Um einen Termin zu buchen klicken Sie bitte <a href="Terminvereinbarung.html" style="color: #003366;"><b>hier</b></a>.
+
+
 /*Navigations Knöpfe*/
     /*So wird der Knopf im Standard dargestellt*/
     .nav-btn {
