@@ -133,7 +133,7 @@ border: 8px solid white;
 margin: 20px;
 }
     
-div#Kontaktdaten1 { 
+#Kontaktdaten1 { 
 background-color:#003366; 
 color: white;
 padding: 30px;
@@ -149,7 +149,7 @@ border: 8px solid white;
 margin: 20px;
 }
 
-div#Kontaktdaten2 { 
+#Kontaktdaten2 { 
 background-color:#003366; 
 color: white;
 padding: 30px;
