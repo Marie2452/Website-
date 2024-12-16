@@ -132,54 +132,31 @@ border: 8px solid white;
 margin: 20px;
 }
 
-box-banner{
-border: 1px solid white;
-border-radius: 7px;
-padding: 0px;
-width: fit-content;
-margin: 20px auto;
-Line-height: 0%;
-background-color: #003366;
-overflow: hidden;
+.content-block-U {
+    background-color: white;
+    border: 1px solid #ced4da;
+    padding: 10px 10px;
+    margin: 20px;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Schatten */
+    overflow: visible; /* Stellt sicher, dass der Schatten nicht abgeschnitten wird */
+    min-height: 100px;
 }
 
-box-pic {
-vertical-align: bottom;
-border-radius: 8px;
-float: left;
+.content-block-U img{
+    width: 100%;
+    height: auto;
 }
 
-box-text{
-line-height: 20px;
-margin: 15px;
-float: right; 
-color: white;
+.content-block-U p{
+    text-align: center;
+    text-decoration: none; /* Entfernt die Standard-Unterstreichung */
+    color: #003366; /* Textfarbe */
+    font-size: 16px; /* Schriftgröße */   
 }
 
-box-banner1{
-border: 1px solid white;
-border-radius: 7px;
-padding: 0px;
-width: fit-content;
-margin: 20px auto;
-Line-height: 0%;
-background-color: #003366;
-overflow: hidden;
-}
-
-box-pic1 {
-vertical-align: bottom;
-border-radius: 5%;
-float: left;
-}
-
-box-text1{
-line-height: 20px;
-margin: 15px;
-float: right;
-color: white;
-}
-
+    
 #Link{
 background-color: white;
 }
