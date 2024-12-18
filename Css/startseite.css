@@ -141,6 +141,14 @@ body {      /*Body gibt das Styling für den Kompletten rumpf der Webseite*/
     
 }
 
+.content-block h4 {
+    margin: 0;
+    background-color: white;
+    font-size: 1.2rem;
+    color: #003366;
+    margin-bottom: 5px;   
+}
+
 .content-block label {
     margin: 0;
     background-color: white;
@@ -182,10 +190,6 @@ img {
 }
 .image-meldung{
    text-align: center;
-}
-
-.text-meldung{
-
 }
 
 .content-block-meldung {
